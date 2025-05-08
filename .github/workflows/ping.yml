@@ -1,7 +1,8 @@
 name: Keep Glitch Alive
 on:
   schedule:
-    - cron: '*/1 * * * *'  # Runs every 1 minutes
+    - cron: '*/1 * * * *'  # Runs every 1 minute
+  workflow_dispatch:  # Allows manual triggering
 jobs:
   ping:
     runs-on: ubuntu-latest
