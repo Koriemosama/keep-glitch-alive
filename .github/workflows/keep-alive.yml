@@ -3,7 +3,7 @@ name: Keep Glitch Alive
 on:
   workflow_dispatch:
   schedule:
-    - cron: '*/1 * * * *'  # Ping every 1 minute
+    - cron: '*/5 * * * *'  # Ping every 5 minute
 
 jobs:
   ping:
