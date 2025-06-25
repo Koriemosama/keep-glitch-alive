@@ -1,0 +1,12 @@
+name: Keep Glitch Alive
+
+on:
+  schedule:
+    - cron: '*/1 * * * *'  # Ping every 1 minutes
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Ping Glitch App
+        run: curl -s "https://catnip-highfalutin-treatment.glitch.me" >/dev/null
