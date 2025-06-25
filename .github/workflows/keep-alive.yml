@@ -1,7 +1,7 @@
 name: Keep Glitch Alive
 
 on:
-  workflow_dispatch:
+  workflow_dispatch: {}
   schedule:
     - cron: '*/5 * * * *'  # Ping every 5 minute
 
